@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+    #hero-overlay {
+        background-image: url('textured-stripes.png');
+        width: 1500px;
+        height: 444px;
+        z-index: 1000;
+        margin-right: 20px;
+        float: left;
+    }
+    .square {
+        width: 50px;
+        height: 50px;
+    }
+    .colors {
+        float: left;
+    }
+    #one {
+        border: 1px solid black;
+        background-color: #601E1F;
+    }
+    #two {
+        border: 1px solid black;
+        background-color: #5B6042;
+    }
+    #three {
+        border: 1px solid black;
+        background-color: #425259;
+    }
+    #four {
+        border: 1px solid black;
+        background-color: #EAD67A;
+    }
+    #five {
+        border: 1px solid black;
+        background-color: #EBECE8;
+    }
+    #six {
+        border: 1px solid black;
+        background-color: #2E2E2C;
+    }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    /*jslint browser:true */
+    "use strict";
+    $(document).ready(function() {
+        $('#one').click(function(event) {
+            $('#hero-overlay').css('background-color', '#601E1F');
+        });
+        $('#two').click(function(event) {
+            $('#hero-overlay').css('background-color', '#5B6042');
+        });
+        $('#three').click(function(event) {
+            $('#hero-overlay').css('background-color', '#425259');
+        });
+        $('#four').click(function(event) {
+            $('#hero-overlay').css('background-color', '#EAD67A');
+        });
+        $('#five').click(function(event) {
+            $('#hero-overlay').css('background-color', '#EBECE8');
+        });
+
+        $('#six').click(function(event) {
+            $('#hero-overlay').css('background-color', '#2E2E2C');
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <div id="hero-overlay"></div>
+    <div class="colors">
+        <div id="six" class="square"></div>Iron Gray
+        <div id="one" class="square"></div>Countrylane Red
+        <div id="three" class="square"></div>Evening Blue
+        <div id="two" class="square"></div>Mountain Sage
+        <div id="four" class="square"></div>Harris Cream
+        <div id="five" class="square"></div>Arctic White
+    </div>
+</body>
+
+</html>
